@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.etape1{
+    background-color: rgb(49, 40, 48);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.containerEtape1 h1, .containerEtape1 h2, .containerEtape1 input{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.containerEtape1 h2{    
+   text-align: center;
+   font-size: 1.8rem;
+    font-family: 'New Tegomin', serif
+}
+
+.containerEtape1 input{
+    width: 90%;
+    font-size: 1.2em;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'New Tegomin', serif
+}
+
+.containerEtape1 button{
+    background-color: white;
+    font-size: 1em;
+    border: none;
+    width: 100px;
+    display: block;
+    margin: 2em auto;
+    padding: 10px;
+    font-family: 'New Tegomin', serif
+}
+
+.containerEtape1 button:hover{
+    background-color: black;
+    color: white
+}
+
+.containerEtape1 h1{
+    font-size: 3rem;
+    font-family: 'New Tegomin', serif
+}
+
+
+/*-------------------------- Page 2 --------------------*/
+.page2{
+    background-color: rgb(49, 40, 48);
+    height: 100vh;
+    color:white;
+    z-index: 1;
+    font-family: 'New Tegomin', serif;
+    text-align: center;
+    transform: translateY(-100%); 
+    animation: afficher 2s forwards;
+}
+
+@keyframes afficher{
+    to{
+        transform: translateY(0);
+    }
+}
+
+.etape2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.etape2 h1{
+    font-size: 2em;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(226, 68, 200);
+    border: none;
+    height: 3px;
+}
+.containerPerso{
+    margin: 0 auto;
+}
+
+.containerPerso .dragon, .containerPerso .hero {
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.2em;
+}
+
+.vie{
+    margin-bottom: 10px;
+    background-size: 10px;
+    font-weight: 600;
+}
+
+#nomHero, #nomDragon{
+    font-style: italic;
+}
+
+.barreD{
+    width: 100px;
+    height: 20px;
+    background-color: yellowgreen;
+}
+
+.barreH{
+    width: 100px;
+    height: 20px;
+    background-color: yellowgreen;
+}
+
+
+.question{
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.containerInfo{
+    height: 50px;
+}
+
+.resultat{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(26, 23, 25);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    top: -100%;
+    z-index: 2;
+    animation: descendre 1s forwards;
+}
+
+@keyframes descendre{
+    to{
+        top: 0
+    }
+}
+
+.page2 button{
+    width: 40%;
+    font-family: 'New Tegomin', serif;
+    font-size: 1em;
+    margin-bottom: .5em;
+    height: 100px;
+    font-weight: 500;
+}
+
+.infoResultat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    width: 100%;
+}
+
+.infoResultat p{
+    color: white;
+    font-weight: 600;
+    font-size: 4em;
+}
+.infoResultat a{
+    color: white;
+    font-size: 1.5em;
+}
+
+.infoResultat a:hover{
+    color: rgb(184, 26, 52)
+}
+
+
+@media only screen and (min-width: 1300px){
+    .etape2{
+        width: 50%;
+        margin: 0 auto
+    }
+    
+    hr{
+        width: 40%;
+    }
+    .containerEtape1 input{
+        width: 30%;
+        margin: 5em auto
+    }
+}
